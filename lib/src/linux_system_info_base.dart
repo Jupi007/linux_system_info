@@ -30,8 +30,8 @@ class SystemInfo {
       os_release[data[0]] = data[1].replaceAll('\"', '');
     }
 
-    os_name = os_release['NAME'];
-    os_version = os_release['VERSION_ID'];
+    os_name = os_release['NAME'] ?? '';
+    os_version = os_release['VERSION_ID'] ?? '';
   }
 }
 
